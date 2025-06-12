@@ -34,5 +34,8 @@ export class DataBindingComponent  {
   getClick(){
     console.log('button clicked')
   }
+  showMsg(message:string){
+    alert(message)
+  }
 
 }
