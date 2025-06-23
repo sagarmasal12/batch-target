@@ -1,8 +1,9 @@
 <div class="container">
-    <div class="row">
-        <div class="col-5">
+    <div class="row mt-5">
+        <div class="col-12" id="divContainer">
+            <p>{{childData}}</p>
             <h1>hello this is a parent </h1>
         </div>
     </div>
 </div>
-<app-child-component [uname]="userName"></app-child-component>
+<app-child-component [uname]="userName" (notify)="ParentMethod($event)"></app-child-component>

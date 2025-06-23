@@ -9,5 +9,11 @@ import { ChildComponentComponent } from "../child-component/child-component.comp
 })
 export class DashboardComponent {
 
-  userName:string='Joel Pareira'
+  userName:string='Joel Pareira';
+
+  childData:string='';
+   
+  ParentMethod(data:string){
+    this.childData =data;
+  }
 }

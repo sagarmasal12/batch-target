@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-child-component',
@@ -10,8 +10,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ChildComponentComponent implements OnInit {
 
-  @Input() uname:string=''
+  @Input() uname:string='';
 
+  @Output() notify:EventEmitter<string>= new EventEmitter<string>
+
+
+  passData(){
+    this.notify.emit("this msg is comming from child component")
+  }
   constructor(){
 
   }
