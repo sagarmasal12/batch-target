@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { ChildComponentComponent } from "../child-component/child-component.component";
 
 @Component({
   selector: 'app-dashboard',
-  imports: [],
+  imports: [ChildComponentComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
