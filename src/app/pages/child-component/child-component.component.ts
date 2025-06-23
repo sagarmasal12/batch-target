@@ -1,11 +1,23 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-child-component',
-  imports: [],
+  standalone:true,
+  imports: [CommonModule],
   templateUrl: './child-component.component.html',
   styleUrl: './child-component.component.css'
 })
-export class ChildComponentComponent {
+export class ChildComponentComponent implements OnInit {
 
+  @Input() uname:string=''
+
+  constructor(){
+
+  }
+
+  ngOnInit(): void {
+    
+  }
 }
+

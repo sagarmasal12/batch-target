@@ -9,5 +9,5 @@ import { ChildComponentComponent } from "../child-component/child-component.comp
 })
 export class DashboardComponent {
 
-  
+  userName:string='Joel Pareira'
 }
