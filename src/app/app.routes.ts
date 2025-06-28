@@ -6,6 +6,7 @@ import { TemplateFormComponent } from './pages/template-form/template-form.compo
 import { LayoutcompComponent } from './pages/layoutcomp/layoutcomp.component';
 import { CompoNotFoundComponent } from './pages/compo-not-found/compo-not-found.component';
 import { Title } from '@angular/platform-browser';
+import { DemoCodeComponent } from './pages/demo-code/demo-code.component';
 
 export const routes: Routes = [
     {
@@ -33,6 +34,10 @@ export const routes: Routes = [
                 path:"dashboard",
                 component:DashboardComponent,
                 data:{Title: 'Sagar Masal', Education:'BscIt'}
+            },
+            {
+                path:'demo',
+                component:DemoCodeComponent
             },
             {
                 path: "**",
