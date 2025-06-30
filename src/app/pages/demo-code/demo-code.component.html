@@ -27,8 +27,21 @@
             <h3>Set Input Field</h3>
             <input class="form-control" value="{{name}}" type="text">
             <div class="btn btn-primary mt-2" (click)="setName()">Set Name</div>
-          
         </div>
-
+    </div>
+    <div class="row mt-5">
+        <div class="col-3">
+            <h3>Get Value with template reference Variable:-</h3>
+            <p> {{email}}</p>
+            <input type="text" placeholder="Enter Email" class="form-control" #emailField> <br>
+            <div class="btn btn-warning mt-2" (click)="getEmail(emailField.value)">Get Email</div>
+        </div>
+         <div class="col-3">
+            <h3>Set Value temp reference var:-</h3>
+            <!-- <p>{{email}}</p> -->
+            <input type="text" placeholder="Enter Email" class="form-control" value="{{name}}" #emailField> <br>
+            <div class="btn btn-outline-danger mt-2" (click)="setEmail()">Set Email</div>
+        </div>
+        
     </div>
 </div>

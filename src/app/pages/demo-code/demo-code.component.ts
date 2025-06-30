@@ -24,6 +24,8 @@ export class DemoCodeComponent {
 
   name = '';
   displayname = "";
+
+  email='';
   getName(event:Event){
     const Name = (event.target as HTMLInputElement).value
     // console.log(Name);
@@ -37,5 +39,14 @@ export class DemoCodeComponent {
     this.name="Sagar"
   }
 
+
+  getEmail(val:string){
+    this.email= val;
+    console.log(val)
+  }
+
+  setEmail(){
+    this.email= 'default@gmail.component';
+  }
 
 }
