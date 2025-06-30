@@ -22,12 +22,31 @@ export class DemoCodeComponent {
     this.count=0
   }
 
-  Name=''
+  name = '';
+  displayname = "";
+
+  email='';
   getName(event:Event){
     const Name = (event.target as HTMLInputElement).value
     // console.log(Name);
-    this.Name=Name
+    this.name=Name
     
-    }
+  }
+  showName(){
+    this.displayname= this.name
+  }
+  setName(){
+    this.name="Sagar"
+  }
+
+
+  getEmail(val:string){
+    this.email= val;
+    console.log(val)
+  }
+
+  setEmail(){
+    this.email= 'default@gmail.component';
+  }
 
 }
