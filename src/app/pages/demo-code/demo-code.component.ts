@@ -21,4 +21,13 @@ export class DemoCodeComponent {
   handleReset(){
     this.count=0
   }
+
+  Name=''
+  getName(event:Event){
+    const Name = (event.target as HTMLInputElement).value
+    // console.log(Name);
+    this.Name=Name
+    
+    }
+
 }
