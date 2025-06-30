@@ -22,12 +22,20 @@ export class DemoCodeComponent {
     this.count=0
   }
 
-  Name=''
+  name = '';
+  displayname = "";
   getName(event:Event){
     const Name = (event.target as HTMLInputElement).value
     // console.log(Name);
-    this.Name=Name
+    this.name=Name
     
-    }
+  }
+  showName(){
+    this.displayname= this.name
+  }
+  setName(){
+    this.name="Sagar"
+  }
+
 
 }
