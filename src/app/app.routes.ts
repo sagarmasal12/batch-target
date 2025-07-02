@@ -14,6 +14,10 @@ export const routes: Routes = [
         redirectTo:"",
         pathMatch:"full"
     },
+    // {
+    //     path: 'admin',
+    //     loadChildren:() => import('./admin/admin/admin.component').then(m=> m.AdminComponent)
+    // },
     {
         path:'',
         component:LayoutcompComponent,
